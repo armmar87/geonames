@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('get-geo-names-file', 'GeoNamesController@getGeoNamesFile');

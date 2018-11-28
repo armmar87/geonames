@@ -9,8 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class GeoNamesController extends Controller
 {
+
+    public function getHomePage ()
+    {
+        return view('home');
+    }
+
+    public function getTwentyCities (Request $request)
+    {
+        dd($request->all());
+        return view('home');
+    }
+
     public function getGeoNamesFile()
     {
+
 //        $uri = 'http://download.geonames.org/export/dump/RU.zip';
 //        $client = new Client();
 //        $res = $client->request('GET', $uri);
@@ -36,10 +49,6 @@ class GeoNamesController extends Controller
 //
 //            print_r( basename( $stat['name'] ) . PHP_EOL );
 //        }
-
-
-
-
 
 
     }

@@ -164,6 +164,7 @@ return [
          * Package Service Providers...
          */
         Chumper\Zipper\ZipperServiceProvider::class,
+        MichaelDrennen\Geonames\GeonamesServiceProvider::class,
 
         /*
          * Application Service Providers...

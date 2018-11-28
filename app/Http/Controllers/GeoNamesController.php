@@ -16,20 +16,26 @@ class GeoNamesController extends Controller
 //        $res = $client->request('GET', $uri);
 //        Storage::put('files/geo_names.zip', $res->getBody());
 
-//        $files = glob('files/geo_names.zip');
-//        Zipper::make('files/test.zip')->add($files)->close();
 
-        $za = new \ZipArchive();
+        $zip = new \ZipArchive();
+        $zip->open('files/geo_names.zip');
 
-        $za->open('files/geo_names.zip');
+        $content = $zip->getFromName('RU.txt');
 
+        $str = preg_split("/\d{6,}/", $content);
 
-        for( $i = 0; $i < $za->numFiles; $i++ ){
-            $stat = $za->statIndex( $i );
-            dd($stat );
+        for ($i = 0; $i < sizeof($str); $i++){
+            $result = explode( ' ',  $str[$i]);
+            var_dump($result);
 
-            print_r( basename( $stat['name'] ) . PHP_EOL );
         }
+//        $result = preg_split("/ \d{4}\-\d{1,2}\-\d{1,2} /i", $content);
+//
+//        for( $i = 0; $i < $zip->numFiles; $i++ ){
+//            $stat = $zip->statIndex( $i );
+//
+//            print_r( basename( $stat['name'] ) . PHP_EOL );
+//        }
 
 
 

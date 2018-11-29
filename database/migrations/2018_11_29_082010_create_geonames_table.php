@@ -14,13 +14,11 @@ class CreateGeonamesTable extends Migration
     public function up()
     {
         Schema::create('geonames', function (Blueprint $table) {
-            $table->increments('id');
             $table->integer('uuid');
             $table->string('name');
             $table->string('lang',2);
-            $table->float('lat', 10,8);
-            $table->float('lng',10,8);
-            $table->timestamps();
+            $table->float('lat', 6,4);
+            $table->float('lng',6,4);
         });
     }
 

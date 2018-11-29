@@ -24,7 +24,7 @@ class GeoNamesController extends Controller
 
     public function getAndUpdateGeoNames()
     {
-        ini_set('max_execution_time', 1500);
+        ini_set('max_execution_time', 15000);
 
         $zipFilePath = '/files/geo_names.zip';
         $textFilePath = '/files/geo_names.txt';
@@ -41,7 +41,7 @@ class GeoNamesController extends Controller
 //        Storage::put($textFilePath, $content);
 
         $lines = file(url($textFilePath));
-
+dd(sizeof($lines));
         for ($i = 0; $i < sizeof($lines); $i++){
             $result = explode( "\t",  $lines[$i]);
             GeoNames::saveGeoNamesData($result);

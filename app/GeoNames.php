@@ -12,6 +12,7 @@ class GeoNames extends Model
 
     protected $table = 'geonames';
 
+    public $timestamps = false;
 
     public static function saveGeoNamesData($result) : bool
     {

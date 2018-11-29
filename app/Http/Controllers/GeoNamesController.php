@@ -24,6 +24,8 @@ class GeoNamesController extends Controller
 
     public function getAndUpdateGeoNames()
     {
+        ini_set('max_execution_time', 1500);
+
         $zipFilePath = '/files/geo_names.zip';
         $textFilePath = '/files/geo_names.txt';
 //

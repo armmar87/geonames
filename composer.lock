@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "736fd679ac9d42f9e75584900106be1a",
+    "content-hash": "4cb240643fffc21a7f858f7a6f6e1784",
     "packages": [
         {
             "name": "chumper/zipper",
@@ -65,61 +65,6 @@
                 "zip"
             ],
             "time": "2017-07-17T08:05:10+00:00"
-        },
-        {
-            "name": "curl/curl",
-            "version": "1.9.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mod/curl.git",
-                "reference": "43436a604b18c2a985cbc3f983be817fbe500e99"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-mod/curl/zipball/43436a604b18c2a985cbc3f983be817fbe500e99",
-                "reference": "43436a604b18c2a985cbc3f983be817fbe500e99",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "squizlabs/php_codesniffer": "~2.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Curl": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hassan Amouhzi",
-                    "email": "hassan@anezi.net",
-                    "homepage": "http://hassan.amouhzi.com"
-                },
-                {
-                    "name": "php-curl-class",
-                    "homepage": "https://github.com/php-curl-class"
-                },
-                {
-                    "name": "user52",
-                    "homepage": "https://github.com/user52"
-                }
-            ],
-            "description": "cURL class for PHP",
-            "homepage": "https://github.com/php-mod/curl",
-            "keywords": [
-                "curl",
-                "dot"
-            ],
-            "time": "2018-09-05T17:16:47+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -426,61 +371,6 @@
                 "parser"
             ],
             "time": "2018-03-08T01:11:30+00:00"
-        },
-        {
-            "name": "fabpot/goutte",
-            "version": "v3.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfPHP/Goutte.git",
-                "reference": "3f0eaf0a40181359470651f1565b3e07e3dd31b8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/3f0eaf0a40181359470651f1565b3e07e3dd31b8",
-                "reference": "3f0eaf0a40181359470651f1565b3e07e3dd31b8",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^6.0",
-                "php": ">=5.5.0",
-                "symfony/browser-kit": "~2.1|~3.0|~4.0",
-                "symfony/css-selector": "~2.1|~3.0|~4.0",
-                "symfony/dom-crawler": "~2.1|~3.0|~4.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^3.3 || ^4"
-            },
-            "type": "application",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Goutte\\": "Goutte"
-                },
-                "exclude-from-classmap": [
-                    "Goutte/Tests"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "A simple PHP Web Scraper",
-            "homepage": "https://github.com/FriendsOfPHP/Goutte",
-            "keywords": [
-                "scraper"
-            ],
-            "time": "2018-06-29T15:13:57+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -1095,146 +985,6 @@
                 "storage"
             ],
             "time": "2018-11-23T23:41:29+00:00"
-        },
-        {
-            "name": "michaeldrennen/geonames",
-            "version": "v1.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/michaeldrennen/Geonames.git",
-                "reference": "e7d0925413af1aa2ff49a79519e6978dc2045305"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/michaeldrennen/Geonames/zipball/e7d0925413af1aa2ff49a79519e6978dc2045305",
-                "reference": "e7d0925413af1aa2ff49a79519e6978dc2045305",
-                "shasum": ""
-            },
-            "require": {
-                "curl/curl": "^1.8",
-                "ext-intl": "*",
-                "fabpot/goutte": "^3.2",
-                "illuminate/database": "^5.5",
-                "illuminate/routing": "^5.5",
-                "illuminate/support": "^5.5",
-                "michaeldrennen/local-file": "^1.0",
-                "michaeldrennen/remote-file": "^1.0",
-                "nesbot/carbon": "^1.22",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.0",
-                "phpunit/phpunit": "^6.5",
-                "satooshi/php-coveralls": "^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "MichaelDrennen\\Geonames\\GeonamesServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MichaelDrennen\\Geonames\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Drennen",
-                    "email": "michaeldrennen74@gmail.com"
-                }
-            ],
-            "description": "A Laravel (php) package that interfaces with the geolocation services on geonames.org.",
-            "time": "2018-06-20T13:39:04+00:00"
-        },
-        {
-            "name": "michaeldrennen/local-file",
-            "version": "v1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/michaeldrennen/LocalFile.git",
-                "reference": "39cdf479b82e57ed1be9b0f1991bda43bc55bf24"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/michaeldrennen/LocalFile/zipball/39cdf479b82e57ed1be9b0f1991bda43bc55bf24",
-                "reference": "39cdf479b82e57ed1be9b0f1991bda43bc55bf24",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": "^6.5",
-                "satooshi/php-coveralls": "^2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MichaelDrennen\\LocalFile\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Drennen",
-                    "email": "michaeldrennen74@gmail.com"
-                }
-            ],
-            "description": "A small php library that adds some functions to operate on local files, like an efficient line count function.",
-            "time": "2018-02-04T15:12:46+00:00"
-        },
-        {
-            "name": "michaeldrennen/remote-file",
-            "version": "v1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/michaeldrennen/RemoteFile.git",
-                "reference": "fbd00735e774fb1253a5526c625eba55de58d5ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/michaeldrennen/RemoteFile/zipball/fbd00735e774fb1253a5526c625eba55de58d5ea",
-                "reference": "fbd00735e774fb1253a5526c625eba55de58d5ea",
-                "shasum": ""
-            },
-            "require": {
-                "curl/curl": "^1.8",
-                "nesbot/carbon": "^1.22",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.5",
-                "satooshi/php-coveralls": "^2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MichaelDrennen\\RemoteFile\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Drennen",
-                    "email": "michaeldrennen74@gmail.com"
-                }
-            ],
-            "description": "A php package that is a wrapper around some common operations on remote files.",
-            "time": "2017-12-30T17:12:34+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1939,63 +1689,6 @@
             "time": "2018-09-11T07:12:52+00:00"
         },
         {
-            "name": "symfony/browser-kit",
-            "version": "v4.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "1c4e2f368a09cd33bf4b6e4a4a32b361a16ef1db"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/1c4e2f368a09cd33bf4b6e4a4a32b361a16ef1db",
-                "reference": "1c4e2f368a09cd33bf4b6e4a4a32b361a16ef1db",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/dom-crawler": "~3.4|~4.0"
-            },
-            "require-dev": {
-                "symfony/css-selector": "~3.4|~4.0",
-                "symfony/process": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/process": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\BrowserKit\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony BrowserKit Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-11-26T10:26:29+00:00"
-        },
-        {
             "name": "symfony/console",
             "version": "v4.1.8",
             "source": {
@@ -2171,63 +1864,6 @@
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
             "time": "2018-11-11T19:51:29+00:00"
-        },
-        {
-            "name": "symfony/dom-crawler",
-            "version": "v4.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "a9f533524dcc3970a2c06ee1ec0bba35d3f5910e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/a9f533524dcc3970a2c06ee1ec0bba35d3f5910e",
-                "reference": "a9f533524dcc3970a2c06ee1ec0bba35d3f5910e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "require-dev": {
-                "symfony/css-selector": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/css-selector": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\DomCrawler\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony DomCrawler Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-11-26T10:26:29+00:00"
         },
         {
             "name": "symfony/event-dispatcher",

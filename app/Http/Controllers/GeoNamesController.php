@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\GeoNames;
 use Chumper\Zipper\Facades\Zipper;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
@@ -21,34 +22,29 @@ class GeoNamesController extends Controller
         return view('home');
     }
 
-    public function getGeoNamesFile()
+    public function getAndUpdateGeoNames()
     {
-
+        $zipFilePath = '/files/geo_names.zip';
+        $textFilePath = '/files/geo_names.txt';
+//
 //        $uri = 'http://download.geonames.org/export/dump/RU.zip';
 //        $client = new Client();
 //        $res = $client->request('GET', $uri);
-//        Storage::put('files/geo_names.zip', $res->getBody());
+//        Storage::put($zipFilePath, $res->getBody());
+//
+//        $zip = new \ZipArchive();
+//        $zip->open($zipFilePath);
 
+//        $content = $zip->getFromName('RU.txt');
+//        Storage::put($textFilePath, $content);
 
-        $zip = new \ZipArchive();
-        $zip->open('files/geo_names.zip');
+        $lines = file(url($textFilePath));
 
-        $content = $zip->getFromName('RU.txt');
-
-        $str = preg_split("/\d{6,}/", $content);
-
-        for ($i = 0; $i < sizeof($str); $i++){
-            $result = explode( ' ',  $str[$i]);
-            var_dump($result);
-
+        for ($i = 0; $i < sizeof($lines); $i++){
+            $result = explode( "\t",  $lines[$i]);
+            GeoNames::saveGeoNamesData($result);
         }
-//        $result = preg_split("/ \d{4}\-\d{1,2}\-\d{1,2} /i", $content);
-//
-//        for( $i = 0; $i < $zip->numFiles; $i++ ){
-//            $stat = $zip->statIndex( $i );
-//
-//            print_r( basename( $stat['name'] ) . PHP_EOL );
-//        }
+
 
 
     }

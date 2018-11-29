@@ -31,17 +31,19 @@ function getTwentyCities(data) {
 
 function initMap() {
 
-    var myLatLng = {lat: 40.179, lng: 44.512};
+    let myLatLng = {lat: 40.179, lng: 44.512};
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    let map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         center: myLatLng
     });
 
-    var marker = new google.maps.Marker({
+
+    let marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         title: 'Hello World!'
     });
+
 
 }

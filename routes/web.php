@@ -12,7 +12,8 @@
 */
 
 
-Route::get('get-geo-names-file', 'GeoNamesController@getGeoNamesFile');
-
 Route::get('/', 'GeoNamesController@getHomePage');
 Route::post('get-twenty-cities', 'GeoNamesController@getTwentyCities');
+
+Route::get('get-geo-names-file', 'GeoNamesController@getAndUpdateGeoNames');
+

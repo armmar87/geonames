@@ -17,8 +17,8 @@ class CreateGeonamesTable extends Migration
             $table->integer('uuid');
             $table->string('name');
             $table->string('lang',2);
-            $table->float('lat', 6,4);
-            $table->float('lng',6,4);
+            $table->float('lat', 7,5);
+            $table->float('lng',7,5);
         });
     }
 
